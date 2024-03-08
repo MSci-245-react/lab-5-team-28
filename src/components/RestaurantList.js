@@ -7,7 +7,7 @@ const RestaurantList = ({loadRestaurants, restaurants}) => {
 
   return (
     <ul>
-      {restaurants.map(restaurant => (
+      {restaurants && restaurants.map(restaurant => (
         <li key={restaurant.id}>{restaurant.name}</li>
       ))}
     </ul>
